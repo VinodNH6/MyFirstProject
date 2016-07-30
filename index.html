@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="shortcut icon" href="./favicon/favicon.ico">
+	<link rel="icon" type="image/gif" href="./favicon/animated_favicon1.gif">
+
+    <base href="/">  <!-- Must for HTML5.. $locaation.html5.. -->
+        <!-- document.write('<base href="' + document.location + '" />'); -->
+
+	<title> Vinod: Todo App </title>
+ 	<script src="./node_modules/angular/angular.min.js"></script>
+	<script src="./node_modules/angular-route/angular-route.min.js"></script>
+	<!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script> -->
+	<script src="./js/client/angularrouter.js"></script> 	
+
+<!-- 	<script src="./js/server/db.js"></script> 
+	<script src="/js/server/nodeRouter.js"></script>  -->
+</head>
+<body ng-app="myApp">
+
+<p>My Sample TODOs Application</p>
+
+<a href="/home">Main</a>
+<a href="/Todos">Todos</a>
+<a href="/About">About</a>
+<a href="/TodosDB">TodosDB</a>
+
+<div ng-view> </div>
+
+</body>
+</html>
